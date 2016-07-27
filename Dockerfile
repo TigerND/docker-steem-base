@@ -1,5 +1,5 @@
 
-FROM ubuntu
+FROM ubuntu:latest
 MAINTAINER Aleksandr Zykov <tiger@mano.email>
 
 ENV DEBIAN_FRONTEND noninteractive
