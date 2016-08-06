@@ -14,33 +14,37 @@ RUN echo "System updates" &&\
 RUN echo "Runtime requirements" &&\
     ( \
         apt-get install -qy --no-install-recommends \
-        coreutils \
-        dnsutils \
-        iputils-ping \
-        ca-certificates \
-        wget \
-        curl \
-        net-tools \
-        iptables \
+            coreutils \
+            dnsutils \
+            iputils-ping \
+            ca-certificates \
+            wget \
+            curl \
+            net-tools \
+            iptables \
+            figlet \
     ) && \
     apt-get clean -qy
 
 RUN echo "Development requirements" &&\
     ( \
         apt-get install -qy --no-install-recommends \
-        git \
-        cmake \
-        g++ \
-        python3 \
-        python3-dev \
-        autotools-dev \
-        libicu-dev \
-        build-essential \
-        libbz2-dev \
-        libssl-dev \
-        libncurses5-dev \
-        doxygen \
-        libreadline-dev \
-        dh-autoreconf \
+            git \
+            cmake \
+            g++ \
+            python3 \
+            python3-dev \
+            autotools-dev \
+            libicu-dev \
+            build-essential \
+            libbz2-dev \
+            libssl-dev \
+            libncurses5-dev \
+            doxygen \
+            libreadline-dev \
+            dh-autoreconf \
+            python2.7-dev \
     ) && \
     apt-get clean -qy
+    
+RUN figlet 'Ready!'
