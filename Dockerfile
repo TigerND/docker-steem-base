@@ -29,21 +29,21 @@ RUN echo "Runtime requirements" &&\
 RUN echo "Development requirements" &&\
     ( \
         apt-get install -qy --no-install-recommends \
-        git \
-        cmake \
-        g++ \
-        python3 \
-        python3-dev \
-        autotools-dev \
-        libicu-dev \
-        build-essential \
-        libbz2-dev \
-        libssl-dev \
-        libncurses5-dev \
-        doxygen \
-        libreadline-dev \
-        dh-autoreconf \
-        python2.7-dev \
+            git \
+            cmake \
+            g++ \
+            python3 \
+            python3-dev \
+            autotools-dev \
+            libicu-dev \
+            build-essential \
+            libbz2-dev \
+            libssl-dev \
+            libncurses5-dev \
+            doxygen \
+            libreadline-dev \
+            dh-autoreconf \
+            python2.7-dev \
     ) && \
     apt-get clean -qy
     
