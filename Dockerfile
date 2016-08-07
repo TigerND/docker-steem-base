@@ -4,6 +4,8 @@ MAINTAINER Aleksandr Zykov <tiger@mano.email>
 
 ENV DEBIAN_FRONTEND noninteractive
 
+ADD multiverse.list /etc/apt/sources.list.d/
+
 RUN echo "System updates" &&\
     ( \
         apt-get update -q &&\
