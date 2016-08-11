@@ -1,5 +1,5 @@
 
-FROM ubuntu:latest
+FROM ubuntu:16.04
 MAINTAINER Aleksandr Zykov <tiger@mano.email>
 
 ENV DEBIAN_FRONTEND noninteractive
@@ -18,33 +18,15 @@ RUN echo "Runtime requirements" &&\
             dnsutils \
             iputils-ping \
             ca-certificates \
-            wget \
-            curl \
             net-tools \
             iptables \
             figlet \
+            wget \
+            curl \
+            bzip2 \
+            unzip \
+            zip \
     ) && \
     apt-get clean -qy
 
-RUN echo "Development requirements" &&\
-    ( \
-        apt-get install -qy --no-install-recommends \
-            git \
-            cmake \
-            g++ \
-            python3 \
-            python3-dev \
-            autotools-dev \
-            libicu-dev \
-            build-essential \
-            libbz2-dev \
-            libssl-dev \
-            libncurses5-dev \
-            doxygen \
-            libreadline-dev \
-            dh-autoreconf \
-            python2.7-dev \
-    ) && \
-    apt-get clean -qy
-    
 RUN figlet 'Ready!'
