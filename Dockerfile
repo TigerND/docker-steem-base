@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-FROM ubuntu:16.04
+FROM debian:jessie
 MAINTAINER Aleksandr Zykov <tiger@mano.email>
 
 ENV DEBIAN_FRONTEND noninteractive
