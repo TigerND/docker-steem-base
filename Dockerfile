@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 
 FROM ubuntu:16.04
 MAINTAINER Aleksandr Zykov <tiger@mano.email>
